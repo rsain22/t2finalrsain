@@ -69,7 +69,7 @@ class TrackModel(db.Model):
         self.album = f"http://t2finalrsain.herokuapp.com/albums/{self.album_id}"
         self.self = f"http://t2finalrsain.herokuapp.com/tracks/{self.id}"
 
-db.create_all()
+#db.create_all()
 
 artist_post_args = reqparse.RequestParser()
 artist_post_args.add_argument("name", type=str, required = True)
